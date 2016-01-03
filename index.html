@@ -4,11 +4,14 @@
 		<title>The Guardian US' Lunch Roulette</title>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
 		<link rel='stylesheet' type='text/css' href='css/style.css'>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<meta name="robots" content="noindex, nofollow">
 	</head>
 
 	<body>
 
+	<div class='lunch-wrapper'>
 		<h1>Lunch roulette</h1>
 
 		<div class='spin-button'>
@@ -16,9 +19,11 @@
 		</div>
 
 		<div class='return-space'></div>
-
+	</div>
 	
 	<script>
+
+	var windowSize = document.querySelector('.lunch-wrapper').getBoundingClientRect();
 
 	var colors = [ '8D4BB1', '5469B4', '45AE91', 'DFF761', 'FFA964'];
 
@@ -31,7 +36,12 @@
 		var datum = restaurants[getRandom(restaurants)];
 		var color = '#'+ colors[getRandom(colors)];
 
-		$( '.return-space' ).html( '<div class="lunch-spot">' + datum.name + '<//div><div class="address">' + datum.address + '</div>' );
+		if (windowSize < 400) {
+			$( '.return-space' ).html( '<div class="lunch-spot">' + datum.name + '<//div><div class="address">' + datum.address + '</div>' );
+		}
+		else {
+			$( '.return-space' ).html( '<div class="lunch-spot">' + datum.mobile + '<//div><div class="address">' + datum.address + '</div>' );
+		}
 
 		$('.txt').html('spin again');
 		$('h1').css({
