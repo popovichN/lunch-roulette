@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Guardian US' Lunch Roulette</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' type='text/css' href='css/style.css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+		<h1>Lunch roulette</h1>
+
+		<div class='spin-button'>
+			<span class='txt'>spin</span>
+		</div>
+
+		<div class='return-space'></div>
+
+	
+	<script>
+
+	var colors = [ '8D4BB1', '5469B4', '45AE91', 'DFF761', 'FFA964'];
+
+	function choose (restaurants) {
+
+		function getRandom( randomize ) {
+		    return Math.floor(Math.random() * randomize.length);
+		};
+
+		var datum = restaurants[getRandom(restaurants)];
+		var color = '#'+ colors[getRandom(colors)];
+
+		$( '.return-space' ).html( '<div class="lunch-spot">' + datum.name + '<//div><div class="address">' + datum.address + '</div>' );
+
+		$('.txt').html('spin again');
+		$('h1').css({
+			'font-size': '21px',
+			'max-width': '150px',
+			'margin': '10px auto 20px',
+			'padding': '0 100px 0 0'
+		});
+		$('.return-space').css('color', color);
+	};
+
+	function slowDelay(delay) {
+		return delay * 1.25;
+	}
+
+	$(".spin-button").click(function () {
+		$.getJSON( "js/lunch.json", function( restaurants ) {
+
+			var delay = 10;
+
+			function spin() {
+				choose(restaurants);
+				delay = slowDelay(delay);
+				if (delay < 1000) {
+					var timer = setTimeout(spin, delay);
+				} else { $('.return-space').css('color', '#ef3e3e'); }
+			}
+
+			spin();
+
+		});
+	})
+
+	</script>
+	</body>
+
+</html>

@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1, 
+.return-space {
+	max-width: 300px;
+	margin: 20px auto 50px;
+	font-size: 72px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	color: #ef3e3e;
+	transition: all 0.2s ease;
+}
+
+.spin-button {
+	margin: 0 auto;
+	width: 300px;
+	height: 100px;
+	background-color: #ef3e3e;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	position: relative;
+	cursor: pointer;
+}
+.txt {
+	color: white;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: inline-block;
+	width: 300px;
+	line-height: 98px;
+	pointer-events: none;
+}
+.title {
+	transition: all 0.5s ease;
+}
+.return-space {
+	max-width: 620px;
+}
+.address {
+	font-size: 16px;
+	font-weight: 400;
+}

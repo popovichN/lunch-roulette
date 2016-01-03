@@ -1,0 +1,20 @@
+[
+	{"name":"Melt Shop","type":"sandwich, salad","address":"111 Fulton St","address_2":"New York, NY 10038","notes":""},
+	{"name":"Vietspot","type":"Vietnamese","address":"99C Nassau St","address_2":"New York, NY 10038","notes":""},
+	{"name":"Pisillo","type":"sandwich","address":"97 Nassau St","address_2":"New York, NY 10038","notes":""},
+	{"name":"BareBurger","type":"burger","address":"155 William St","address_2":"New York, NY 10038","notes":""},
+	{"name":"Aroy Dee","type":"Thai","address":"20 John St","address_2":"New York, NY 10038","notes":""},
+	{"name":"Go! Go! Curry","type":"Japanese, curry","address":"12 John St","address_2":"New York, NY 10038","notes":""},
+	{"name":"Kuu Ramen","type":"Japanese, soup","address":"20 John St","address_2":"New York, NY 10038","notes":""},
+	{"name":"Alfanoose","type":"middle eastern","address":"64 Fulton St","address_2":"New York, NY 10038","notes":""},
+	{"name":"Squire's Diner","type":"diner","address":"80 Beekman St","address_2":"New York, NY 10038","notes":""},
+	{"name":"El Luchador","type":"Mexican","address":"87 South St","address_2":"New York, NY 10038","notes":"far walk"},
+	{"name":"Zeytuna","type":"food court","address":"59 Maiden Ln","address_2":"New York, NY 10038","notes":""},
+	{"name":"Sophie's Cuban Cuisine","type":"Cuban","address":"76 Fulton St","address_2":"New York, NY 10038","notes":""},
+	{"name":"Tandoor Palace","type":"Indian","address":"88 Fulton St","address_2":"New York, NY 10038","notes":""},
+	{"name":"Rosella's Pizzeria","type":"pizza","address":"164 William St","address_2":"New York, NY 10038","notes":""},
+	{"name":"BentOn Cafe","type":"Japanese, bento box","address":"123 William St","address_2":"New York, NY 10038","notes":""},
+	{"name":"Open Kitchen","type":"bougie deli","address":"123 William St","address_2":"New York, NY 10038","notes":""},
+	{"name":"Cafe Tomato","type":"deli","address":"142 Fulton St","address_2":"New York, NY 10038","notes":""},
+	{"name":"Dave's Hoagie's","type":"sandwich","address":"26 Cedar St","address_2":"New York, NY 10038","notes":"far walk"}
+]
