@@ -72,4 +72,7 @@ h1,
 	.return-space {
 		font-size: 64px;
 	}
+	.txt {
+		width: 100%;
+	}
 }
